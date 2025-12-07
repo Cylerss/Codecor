@@ -2,14 +2,25 @@ import express from 'express';
 import {ENV} from './lib/env.js';
 import path from 'path';
 import { connectDB } from './lib/db.js';
+import cors from 'cors';
+
+import { inngest, functions } from "./lib/inngest.js";
+
 
 const __dirname=path.resolve();
 
 const app = express();
+
+app.use(express.json());
+app.use(cors({origin: ENV.CLIENT_URL || '*', Credentials: true}));
+
 const PORT = ENV.PORT || 3000;
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
+app.use("/api/inngest", serve({ client: inngest, functions }));
+
+
+app.get("/health", (req, res) => {
+  res.status(200).json({ msg: "api is up and running" });
 });
 
 
