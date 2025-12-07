@@ -9,6 +9,9 @@
     "start": "npm run start --prefix backend"
 
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cylerss/Codecor.git"
