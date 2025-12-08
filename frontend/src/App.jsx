@@ -1,10 +1,14 @@
-import {SignInButton} from '@clerk/clerk-react';
 
+import { Routes } from 'react-router';
+import { Toaster } from 'react-hot-toast';
 const App=()=> {
   return (
-    <>
-    <SignInButton />
-    </>      
+  <>
+    <Routes>
+
+    </Routes>
+    <Toaster/>
+    </>     
   );
 }
 
