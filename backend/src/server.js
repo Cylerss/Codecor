@@ -16,7 +16,7 @@ const __dirname=path.resolve();
 const app = express();
 
 app.use(express.json());
-app.use(cors({origin: ENV.CLIENT_URL || '*', Credentials: true}));
+app.use(cors({origin: ENV.CLIENT_URL || '*', credentials: true}));
 app.use(clerkMiddleware());
 
 const PORT = ENV.PORT || 3000;
