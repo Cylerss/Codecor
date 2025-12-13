@@ -1,6 +1,8 @@
 <h1 align="center">✨ Full-Stack Interview Platform ✨</h1>
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+![Demo App](frontend/public/Demo.png)
+
+![Demo App Link](https://codecor.onrender.com/)
 
 Codecor is interview platform which enables problem solving and remote interview platforming
 
