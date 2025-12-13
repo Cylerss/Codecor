@@ -2,7 +2,7 @@
 
 ![Demo App](frontend/public/Demo.png)
 
-![Demo App Link](https://codecor.onrender.com/)
+[Demo App Link](https://codecor.onrender.com/)
 
 Codecor is interview platform which enables problem solving and remote interview platforming
 
